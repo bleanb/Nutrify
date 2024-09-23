@@ -1,0 +1,25 @@
+formulario de contacto para ser nuefvo punto de venta. OK
+Rediseño seccioon donde comprar OK
+BANNER quienes somos modificar OK
+Agregar en el header, punto de venta. OK
+Box 3 simples pasos reformular. >
+Sellos a definir. >
+Agrandar inicio y agregar slider. OK
+
+_______________________________________________________________________
+
+Seccion - Pagina en construccion.
+
+Seccion prodcutos: cambio con mosaicos de diferentes produ tos que te lleve al catalogo
+
+seccion nostoros: sin video. armo algo.
+
+seccion contacto: tipo de local: Distribuidora, almacen, dietetica, carniceria, etc..
+	otros, que despligue un box para completar.
+
+Box de iconos: a diseñar algo nuevo
+
+Sinta infinita: Destacar valores.
+
+FOOTER:
+logo - Mail y direc - redes (ig,f,ln)
