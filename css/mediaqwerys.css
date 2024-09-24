@@ -19,7 +19,7 @@
 
     .logo-header{
         width: 40%!important;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .nav-wrapper{
@@ -69,13 +69,13 @@
     }
 
     .img-gilada{
-        width: 95%;
+        width: 100%;
         margin-left: -5px;
     }
 
     .expositor{
-        height: 450px;
-        margin-top: -10px;
+        height: 750px;
+        margin-top: -20px;
     }
 
 }
