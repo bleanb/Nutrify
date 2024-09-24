@@ -262,6 +262,14 @@ main {
         grid-gap: 30px;
         padding: 35px 0px;
     }
+
+    .contenedor-datos-empreza{
+        margin-top: -70px;
+    }
+
+    .grupo-1 .box figure{
+        margin-top: -50px;
+    }
 }
 
 /****************************************************************************/
