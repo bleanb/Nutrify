@@ -1,3 +1,22 @@
+window.addEventListener('load', function () {
+    var expositor = document.querySelector('.expositor-datos');
+    if (window.innerWidth <= 768) { // por ejemplo, para pantallas más pequeñas
+        expositor.src = './assets/img/expositorphone.png';
+    } else {
+        expositor.src = './assets/img/expositor.png';
+    }
+});
+
+window.addEventListener('resize', function () {
+    var expositor = document.querySelector('.expositor-datos');
+    if (window.innerWidth <= 768) {
+        expositor.src = './assets/img/expositorphone.png';
+    } else {
+        expositor.src = './assets/img/expositor.png';
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Seleccionamos la imagen por su ID
     const image = document.getElementById('img-panel1');
