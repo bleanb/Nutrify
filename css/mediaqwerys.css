@@ -11,7 +11,11 @@
     }
 
     .sidenav-overlay {
-        display: none!important;
+        z-index: 91!important;
+    }
+
+    .sidenav{
+        z-index: 100!important;
     }
 
     .sidenav a{
