@@ -278,10 +278,10 @@ main {
 /****************************************************************************/
 /*HEADER*/
 
-.hamburgesa{
-    position: absolute;
-    opacity: 0;
-    z-index: -10;
+
+.sidenav-trigger{
+    z-index: -100!important;
+    margin-left: -500px!important;
 }
 
 .dropdown-trigger i{

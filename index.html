@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
-
 <body>
     <!--<div class="icono-wpp"><a href="#" class="fa fa-whatsapp"></a></div>-->
     <!--------------------------------------------------------------------------------------------------------------------------->
@@ -36,22 +35,21 @@
             <li><a href="#!">Ensaladas</a></li>
         </ul>
 
-  <ul id="slide-out" class="sidenav">
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</li>
-    <li><div class="divider"></div></li>
-    <li><a href="#!" class="waves-effect">Nosotros</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="#!" class="waves-effect">Contacto</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="#!" class="waves-effect">Productos</a></li>
-  </ul>
-  
+        <ul id="slide-out" class="sidenav">
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!" class="waves-effect">Nosotros</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!" class="waves-effect">Contacto</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#productos" class="waves-effect">Productos</a></li>
+        </ul>
+
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger hamburgesa"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large hamburguesa"><i class="material-icons">menu</i></a>
                 <a href="#inicio"><img class="logo-header" src="./assets/img/logo.avif" alt="Logo de la marca"></a>
                 <ul class="right hide-on-med-and-down">
-                    <!-- Dropdown Trigger -->
                     <li><a class="dropdown-trigger" href="#productos" data-target="dropdown1">Productos<i
                                 class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
@@ -61,6 +59,7 @@
                 </ul>
             </div>
         </nav>
+
     </header>
     <!--------------------------------------------------------------------------------------------------------------------------->
     <!--                                            SECCION MAIN                                                             -->
@@ -333,18 +332,40 @@
 
 
     <script>
-        var options = {
-      edge: 'left', // o 'right'
-      draggable: true, // permite deslizar para abrir/cerrar
-      inDuration: 250, // duración de la animación de entrada
-      outDuration: 200 // duración de la animación de salida
-    };
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
     
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options);
-    });
+        const sidenavLinks = document.querySelectorAll('.sidenav a'); // Seleccionamos todos los enlaces dentro del sidenav
+        const closeDelay = 700; // Retardo en milisegundos
+    
+        // Función para cerrar el sidenav con retardo
+        const closeSidenav = () => {
+            const sidenavInstance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+            setTimeout(() => {
+                sidenavInstance.close();
+            }, closeDelay); // Se cierra después del retardo
+        };
+    
+        // Agregamos un evento de clic a cada enlace
+        sidenavLinks.forEach(link => {
+            link.addEventListener('click', closeSidenav);
+        });
+    
+        // Función para cerrar el sidenav al hacer clic fuera de él
+        const closeSidenavOnClickOutside = (event) => {
+            const sidenav = document.querySelector('.sidenav');
+            if (!sidenav.contains(event.target) && sidenav.classList.contains('open')) {
+                closeSidenav();
+            }
+        };
+    
+        // Agregar evento de clic al documento
+        document.addEventListener('click', closeSidenavOnClickOutside);
     </script>
+    
+    
     <!------------------------------------------------------------------------------------------------------------------------------------------->
 </body>
 
