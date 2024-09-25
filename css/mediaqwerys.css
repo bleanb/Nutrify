@@ -101,6 +101,7 @@
 
     .img-gilada{
         opacity: 0;
+        z-index: -100;
     }
 
     .expositor{
@@ -155,7 +156,7 @@
     .expositor-nosotros{
         background: red;
         height: 1000px;
-        margin-top: 400px;
+        margin-top: 380px;
     }
 
 }

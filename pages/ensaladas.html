@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>nutrify</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/nutrify_iso_5.svg" type="image/png">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaqwerys.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Tartas</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Milanesas</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Ensaladas</a></li>
+        </ul>
+
+        <ul id="slide-out" class="sidenav">
+            <li><img class="logo-header2" src="../assets/img/logo.avif" alt="Logo de la marca"></li>
+            <li><div class="divider"></div></li>
+            <li><a href="/index.html#inicio" class="waves-effect">Inicio</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="../index.html#productos" class="waves-effect">Productos</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="../index.html#nosotros" class="waves-effect">Nosotros</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="../index.html#vender" class="waves-effect">Contacto</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="../index.html#ubicacion" class="waves-effect"><i class="material-icons left mapicon">location_on</i>Donde Encontrarnos</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large hamburguesa"><i class="material-icons">menu</i></a>
+                <a href="/index.html#inicio"><img class="logo-header" src="../assets/img/logo.avif" alt="Logo de la marca"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="../index.html#productos" data-target="dropdown1">Productos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="../index.html#nosotros">Nosotros</a></li>
+                    <li><a href="../index.html#vender">Contacto</a></li>
+                    <li><a href="../index.html#ubicacion"><i class="material-icons left mapicon">location_on</i>Donde
+                            Encontrarnos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <!--                                            SECCION MAIN                                                             -->
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <main class="main-productos-ensaladas">
+
+    </main>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <!--                                            SECCION FOOTER                                                             -->
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#inicio">
+                        <img class="logo-footer" src="../assets/img/nutrify_logo_3.svg" alt="Logo de la marca">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <div class="contenedor-datos-empreza">
+                    <p><i class="material-icons left">email</i>Contacto@nutrify.com.ar</p>
+                    <p><i class="material-icons left">local_phone</i>Tel. (55) 1234 5678</p>
+                    <p><i class="material-icons left">location_on</i>Calle Cualquiera 1234,</p>
+                    <p class="ultimo-texto">Cualquier Lugar, CP.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Nutrify</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--                                            SECCION SCRIPTS                                                                            -->
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--<script src="./js/"></script>-->
+    <script src="./js/scroll.js"></script>
+    <script src="./js/carrousel.js"></script>
+    <script src="./js/menu-mapav11.js"></script>
+    <script src="./js/animacion-formulario.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/headerpopup.js"></script>
+    <script src="./js/responsive.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    
+        const sidenavLinks = document.querySelectorAll('.sidenav a'); // Seleccionamos todos los enlaces dentro del sidenav
+        const closeDelay = 300; // Retardo en milisegundos
+    
+        // Función para cerrar el sidenav con retardo
+        const closeSidenav = () => {
+            const sidenavInstance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+            setTimeout(() => {
+                sidenavInstance.close();
+            }, closeDelay); // Se cierra después del retardo
+        };
+    
+        // Agregamos un evento de clic a cada enlace
+        sidenavLinks.forEach(link => {
+            link.addEventListener('click', closeSidenav);
+        });
+    
+        // Función para cerrar el sidenav al hacer clic fuera de él
+        const closeSidenavOnClickOutside = (event) => {
+            const sidenav = document.querySelector('.sidenav');
+            if (!sidenav.contains(event.target) && sidenav.classList.contains('open')) {
+                closeSidenav();
+            }
+        };
+    
+        // Agregar evento de clic al documento
+        document.addEventListener('click', closeSidenavOnClickOutside);
+    </script>
+
+</body>
+
+</html>

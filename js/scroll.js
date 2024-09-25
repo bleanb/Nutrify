@@ -44,11 +44,20 @@
                     var targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                        var offset = targetElement.offsetTop - 100; // Ajuste de 15px hacia arriba
-                        window.scrollTo({
-                            top: offset,
-                            behavior: "smooth" // Esto activa el scroll suave
-                        });
+                        if (window.matchMedia('(max-width: 1024px)').matches) {
+                            var offset = targetElement.offsetTop - 50; // Ajuste de 15px hacia arriba
+                            window.scrollTo({
+                                top: offset,
+                                behavior: "smooth" // Esto activa el scroll suave
+                            });
+                        }
+                        else{
+                            var offset = targetElement.offsetTop - 100; // Ajuste de 15px hacia arriba
+                            window.scrollTo({
+                                top: offset,
+                                behavior: "smooth" // Esto activa el scroll suave
+                            });
+                        }
                     }
                 });
             });
