@@ -3,6 +3,7 @@
     main {
         overflow: hidden;
         width: 100vw;
+        height: 5300px;
     }
 
     header{
@@ -105,9 +106,23 @@
     }
 
     .expositor{
-        height: 670px;
+        height: 580px;
         margin-top: -35px;
         margin-bottom: 15px;
+    }
+
+    .expositor-titulo{
+        position: absolute;
+        font-size: 2em;
+        color: var(--color-uno);
+        font-family: 'InterTight';
+        width: 90%;
+        margin-top: -360px;
+    }
+    .palabra-naranja{
+        color: var(--color-dos);
+        font-family: 'InterTight';
+        font-size: 1em;
     }
 
 /****************************************************************************/
@@ -130,6 +145,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+
+    .expositor-nosotros{
+        background: red;
+        height: 1000px;
+        margin-top: 500px;
     }
 
 }

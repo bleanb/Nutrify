@@ -14,11 +14,20 @@
                     var targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                        var offset = targetElement.offsetTop - 60;
-                        window.scrollTo({
-                            top: offset,
-                            behavior: "smooth" // Esto activa el scroll suave
-                        });
+                        if (window.matchMedia('(max-width: 1024px)').matches) {
+                            var offset = targetElement.offsetTop + 100;
+                            window.scrollTo({
+                                top: offset,
+                                behavior: "smooth" // Esto activa el scroll suave
+                            });
+                        }
+                        else{
+                            var offset = targetElement.offsetTop - 60;
+                            window.scrollTo({
+                                top: offset,
+                                behavior: "smooth" // Esto activa el scroll suave
+                            });
+                        }
                     }
                 });
             });
