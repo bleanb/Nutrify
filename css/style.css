@@ -644,15 +644,10 @@ main {
     justify-content: space-around;
 }
 
-.contenedor-expositor-productos .expositor-productor .contenedor-productos2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .producto {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 100px;
