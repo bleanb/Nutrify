@@ -174,3 +174,15 @@
 .btn-info-nutri{
     margin-top: 15px;
 }
+
+.modal-content{
+    margin-top: 35px!important;
+}
+
+.modal-footer{
+    position: absolute;
+}
+
+.icon-close-modal{
+    font-size: 3em!important;
+}
