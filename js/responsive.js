@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const image = document.getElementById('img-panel1');
     const image2 = document.getElementById('img-panel2');
     const image3 = document.getElementById('img-panel3');
-    const imagen4 = document.getElementById('img-gilada');
 
     // Creamos una función que cambie la imagen según el tamaño de la pantalla
     function changeImage() {

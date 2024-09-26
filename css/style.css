@@ -326,62 +326,19 @@ main {
     background: white;
 }
 
-
-/*
-.container-all {
-    width: 100%;
-    background: white;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+/* Aumentamos la especificidad */
+.dropdown-content a.disabled-link {
+    color: grey !important; /* Color gris para deshabilitar el enlace */
+    pointer-events: none !important; /* Desactiva los clics */
+    cursor: default !important; /* Cambia el cursor a default */
 }
 
 
-.container-all .container-left {
-    width: 20%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.container-all .container-left .logo-header {
-    width: 12em;
-    position: relative;
-    left: 10px;
-}
-
-.container-all .container-right {
-    width: 80%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-all .container-right .navegacion ol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-.container-all .container-right .navegacion ol li {
-    margin-left: 80px;
-
-}
-
-.container-all .container-right .navegacion ol li a {
-    color: var(--color-uno);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'BebasNeue-Regular';
-}
-
-.container-all .container-right .navegacion ol li a:hover {
-    color: var(--color-dos);
+/* Aplica solo al 3er y 4to <li> que contienen un <a> (ignorando los dividers) */
+.dropdown-content li:nth-of-type(5),
+.dropdown-content li:nth-of-type(7) {
+    cursor: default !important;
+    pointer-events: none !important;
 }
 
 
@@ -688,11 +645,7 @@ main {
     margin-top: -200px;
 }
 
-.mapicon2{
-margin-right: 20px;
-margin-top: -60px;
-color: red;
-}
+
 
 /****************************************************************************/
 /****************************************************************************/
