@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 id: 'img-panel3',
-                mobile: './assets/img/panelphone3.jpj',
+                mobile: './assets/img/panelphone3.jpg',
                 desktop: './assets/img/panel3.webp'
             }
         ];

@@ -70,7 +70,7 @@ function solicitarUbicacionUsuario() {
 function inicializarMapa() {
 
     const customIcon = L.icon({
-        iconUrl: './assets/img/marker.png',
+        iconUrl: './assets/img/marker.webp',
         iconSize: [80, 80], // Tamaño del icono [ancho, alto]
     });
 
