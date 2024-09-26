@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.matchMedia('(max-width: 1024px)').matches) {
             // Si es menor o igual, cambiamos la imagen a la versión móvil
             image.src = './assets/img/panelphone1.webp';
-            image2.src = './assets/img/panelphone2.webp';
-            image3.src = './assets/img/panelphone3.webp';
+            image2.src = './assets/img/panelphone2.png';
+            image3.src = './assets/img/panelphone3.png';
         } else {
             // Si es mayor, volvemos a la imagen original
-            image.src = './assets/img/panel1.webp';
-            image2.src = './assets/img/panel2.webp';
-            image3.src = './assets/img/panel3.webp';
+            image.src = './assets/img/panel1.png';
+            image2.src = './assets/img/panel2.png';
+            image3.src = './assets/img/panel3.png';
         }
     
         // Manejo de errores al cargar imágenes
