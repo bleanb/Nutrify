@@ -12,15 +12,23 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.matchMedia('(max-width: 1024px)').matches) {
             // Si es menor o igual, cambiamos la imagen a la versión móvil
             image.src = './assets/img/panelphone1.webp';
-            image2.src = './assets/img/panelphone2.png';
-            image3.src = './assets/img/panelphone3.png';
+            image2.src = './assets/img/panelphone2.webp';
+            image3.src = './assets/img/panelphone3.webp';
         } else {
             // Si es mayor, volvemos a la imagen original
             image.src = './assets/img/panel1.webp';
-            image2.src = './assets/img/panel2.png';
-            image3.src = './assets/img/panel3.png';
+            image2.src = './assets/img/panel2.webp';
+            image3.src = './assets/img/panel3.webp';
         }
+    
+        // Manejo de errores al cargar imágenes
+        [image, image2, image3].forEach(img => {
+            img.onerror = () => {
+                console.error(`Error al cargar la imagen: ${img.src}`);
+            };
+        });
     }
+    
 
     // Ejecutamos la función al cargar la página
     changeImage();
@@ -28,3 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Escuchamos los cambios de tamaño de pantalla para cambiar la imagen dinámicamente
     window.addEventListener('resize', changeImage);
 });
+
+
