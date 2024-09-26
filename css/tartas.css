@@ -7,7 +7,9 @@
     position: relative;
     width: 80%;
     height: 1400px;
-    background: white;
+    /* Suaviza la transición por defecto background-image: url(../assets/img/fondo-abstracto-textura2.jpg);
+    background-size: 50%; */
+    background: whitesmoke;
     margin-top: 30px;
     overflow: hidden;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.5);
@@ -157,4 +159,18 @@
 
 .parrafo-corto-tartas3{
     margin-left: -30px;
+}
+
+.modal{
+    width: 64%!important;
+}
+
+.btn{
+    background: var(--color-dos)!important;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.btn-info-nutri{
+    margin-top: 15px;
 }

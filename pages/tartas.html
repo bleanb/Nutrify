@@ -20,6 +20,8 @@
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body>
@@ -37,25 +39,40 @@
 
         <ul id="slide-out" class="sidenav">
             <li><img class="logo-header2" src="../assets/img/logo.avif" alt="Logo de la marca"></li>
-            <li><div class="divider"></div></li>
+            <li>
+                <div class="divider"></div>
+            </li>
             <li><a href="../index.html#inicio" class="waves-effect">Inicio</a></li>
-            <li><div class="divider"></div></li>
+            <li>
+                <div class="divider"></div>
+            </li>
             <li><a href="../index.html#productos" class="waves-effect">Productos</a></li>
-            <li><div class="divider"></div></li>
+            <li>
+                <div class="divider"></div>
+            </li>
             <li><a href="../index.html#nosotros" class="waves-effect">Nosotros</a></li>
-            <li><div class="divider"></div></li>
+            <li>
+                <div class="divider"></div>
+            </li>
             <li><a href="../index.html#vender" class="waves-effect">Contacto</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="../index.html#ubicacion" class="waves-effect"><i class="material-icons left mapicon">location_on</i>Donde Encontrarnos</a></li>
-            <li><div class="divider"></div></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a href="../index.html#ubicacion" class="waves-effect"><i
+                        class="material-icons left mapicon">location_on</i>Donde Encontrarnos</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
         </ul>
 
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large hamburguesa"><i class="material-icons">menu</i></a>
-                <a href="../index.html#inicio"><img class="logo-header" src="../assets/img/logo.avif" alt="Logo de la marca"></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large hamburguesa"><i
+                        class="material-icons">menu</i></a>
+                <a href="../index.html#inicio"><img class="logo-header" src="../assets/img/logo.avif"
+                        alt="Logo de la marca"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-trigger"  data-target="dropdown1">Productos<i
+                    <li><a class="dropdown-trigger" data-target="dropdown1">Productos<i
                                 class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="../index.html#nosotros">Nosotros</a></li>
                     <li><a href="../index.html#vender">Contacto</a></li>
@@ -70,7 +87,19 @@
     <!--                                            SECCION MAIN                                                             -->
     <!--------------------------------------------------------------------------------------------------------------------------->
     <main class="main-productos-tartas">
+        
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img src="../assets/img/Tablanutricional1.png" alt="Tablanutricional1">
+            </div>
+            <div class="modal-footer">
+                <a href="../pages/tartas.html#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
+            </div>
+        </div>
+
         <br><br><br><br><br><br><br>
+
         <div class="contenedor-catalogo">
             <div class="contenedor-tarta1">
                 <img class="tarta1" src="../assets/img/tartas/caprese.png" alt="imagen tarta">
@@ -78,6 +107,8 @@
                     <h3>Tarta de <span class="color-info-tartas">capresse</span></h3>
                     <p class="parrafo-corto-tartas">Tomate, mozzarella, albahaca, masa
                         integral.</p>
+                    <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
             </div>
             <div class="contenedor-tarta2">
@@ -85,6 +116,8 @@
                     <h3>Tarta de <span class="color-info-tartas">Espinaca y queso</span></h3>
                     <p>Espinaca, cebolla, mozzarella, huevo,
                         morrón, queso crema, masa integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
                 <img class="tarta2" src="../assets/img/tartas/verdura.png" alt="imagen tarta">
             </div>
@@ -94,6 +127,8 @@
                     <h3>Tarta de <span class="color-info-tartas">vegetales horneados</span></h3>
                     <p>Berenjena, cebolla, zapallito, morrón,
                         verdeo, huevo, masa integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
             </div>
         </div>
@@ -101,10 +136,12 @@
             <div class="contenedor-tarta2">
                 <div class="contenedor-info-tartas2">
                     <h3>Tarta de <span class="color-info-tartas">zanahoria al tomillo
-                        con mozzarella
+                            con mozzarella
                         </span></h3>
                     <p>Zanahoria, cebolla, tomillo, queso
                         crema, mozzarella, miel, tarta integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
                 <img class="tarta2" src="../assets/img/tartas/zanahoria.png" alt="imagen tarta">
             </div>
@@ -112,10 +149,12 @@
                 <img class="tarta1" src="../assets/img/tartas/zapallito.png" alt="imagen tarta">
                 <div class="contenedor-info-tartas">
                     <h3>Tarta de <span class="color-info-tartas"> zapallitos al
-                        gratén
+                            gratén
                         </span></h3>
                     <p>Zapallitos, cebolla, mozzarella , huevo,
                         morrón, queso sardo, masa integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
             </div>
             <div class="contenedor-tarta2">
@@ -123,6 +162,8 @@
                     <h3>Tarta de <span class="color-info-tartas">jamon y queso</span></h3>
                     <p class="parrafo-corto-tartas2">Jamón, mozzarella, huevo, masa integral.
                     </p>
+                    <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
                 <img class="tarta2" src="../assets/img/tartas/jyq.png" alt="imagen tarta">
             </div>
@@ -132,9 +173,11 @@
                 <img class="tarta1" src="../assets/img/tartas/zanahoriaysemillas.png" alt="imagen tarta">
                 <div class="contenedor-info-tartas">
                     <h3>Tarta de <span class="color-info-tartas">calabaza y mix de
-                        semillas</span></h3>
+                            semillas</span></h3>
                     <p>Zapallo anco, cebolla, verdeo, huevo,
                         mozzarella, queso crema, masa integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
             </div>
             <div class="contenedor-tarta2">
@@ -142,6 +185,8 @@
                     <h3>Tarta de <span class="color-info-tartas">pollo y queso crema</span></h3>
                     <p class="parrafo-corto-tartas3">Pollo, cebolla, morrón, queso crema,
                         verdeo. masa integral.</p>
+                        <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
                 <img class="tarta2" src="../assets/img/tartas/pollo.png" alt="imagen tarta">
             </div>
@@ -149,10 +194,12 @@
                 <img class="tarta3" src="../assets/img/tartas/Cebollaverdeo.png" alt="imagen tarta">
                 <div class="contenedor-info-tartas3">
                     <h3>Tarta de <span class="color-info-tartas"> cebolla, queso y
-                        verdeo.</span></h3>
+                            verdeo.</span></h3>
                     <p class="parrafo-corto-tartas3">Cebolla, mozzarella, verdeo, huevo,
                         queso crema, masa integral.
-                        </p>
+                    </p>
+                    <!-- Modal Trigger -->
+                    <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
                 </div>
             </div>
         </div>
@@ -201,7 +248,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/headerpopup.js"></script>
     <script src="../js/responsive.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    
 </body>
 
 </html>
