@@ -389,7 +389,7 @@ main {
 }
 
 .panel .carousel-panel .slide .blur-background3 {
-    background: var(--color-uno);
+    background: var(--color-cuatro);
     filter: blur(100px);
     width: 600px;
     height: 550px;
@@ -418,12 +418,12 @@ main {
 }
 
 .parrafo-slide3 {
-    margin-top: 50px;
+    margin-top: 0px;
     font-family: 'Poppins';
     font-weight: bold;
-    color: var(--color-dos);
+    color: var(--color-uno);
     padding: 25px;
-    margin-left: 105px;
+    margin-left: 25px;
 }
 
 
@@ -501,6 +501,14 @@ main {
     opacity: 1;
 }
 
+
+.contenedor-info-panel-slide3 h2 {
+    font-family: 'BebasNeue-Regular';
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--color-uno);
+    margin-top: -80px;
+}
 
 /****************************************************************************/
 /****************************************************************************/
