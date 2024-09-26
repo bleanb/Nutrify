@@ -318,42 +318,6 @@
     <script src="./js/headerpopup.js"></script>
     <script src="./js/responsive.js"></script>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    
-        const sidenavLinks = document.querySelectorAll('.sidenav a'); // Seleccionamos todos los enlaces dentro del sidenav
-        const closeDelay = 300; // Retardo en milisegundos
-    
-        // Función para cerrar el sidenav con retardo
-        const closeSidenav = () => {
-            const sidenavInstance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
-            setTimeout(() => {
-                sidenavInstance.close();
-            }, closeDelay); // Se cierra después del retardo
-        };
-    
-        // Agregamos un evento de clic a cada enlace
-        sidenavLinks.forEach(link => {
-            link.addEventListener('click', closeSidenav);
-        });
-    
-        // Función para cerrar el sidenav al hacer clic fuera de él
-        const closeSidenavOnClickOutside = (event) => {
-            const sidenav = document.querySelector('.sidenav');
-            if (!sidenav.contains(event.target) && sidenav.classList.contains('open')) {
-                closeSidenav();
-            }
-        };
-    
-        // Agregar evento de clic al documento
-        document.addEventListener('click', closeSidenavOnClickOutside);
-    </script>
-    
-    
     <!------------------------------------------------------------------------------------------------------------------------------------------->
 </body>
 

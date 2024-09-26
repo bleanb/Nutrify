@@ -137,12 +137,13 @@ main {
 
 .main-productos-tartas {
     width: 100%;
-    height: 3300px;
+    height: 4600px;
     margin: 0;
     background-image: url(../assets/img/fondo-abstracto-textura.jpg);
     background-size: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 

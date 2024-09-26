@@ -70,22 +70,90 @@
     <!--                                            SECCION MAIN                                                             -->
     <!--------------------------------------------------------------------------------------------------------------------------->
     <main class="main-productos-tartas">
+        <br><br><br><br><br><br><br>
         <div class="contenedor-catalogo">
             <div class="contenedor-tarta1">
-                <img class="tarta1" src="../assets/img/tartas/tartas1.png" alt="imagen tarta">
+                <img class="tarta1" src="../assets/img/tartas/caprese.png" alt="imagen tarta">
                 <div class="contenedor-info-tartas">
-                    <h3>Tarta capresse</h3>
-                    <p>Tomate, mozzarella, albahaca, masa
+                    <h3>Tarta de <span class="color-info-tartas">capresse</span></h3>
+                    <p class="parrafo-corto-tartas">Tomate, mozzarella, albahaca, masa
                         integral.</p>
                 </div>
             </div>
             <div class="contenedor-tarta2">
                 <div class="contenedor-info-tartas2">
-                    <h3>Tarta verdura</h3>
-                    <p>Tomate, mozzarella, albahaca, masa
-                        integral.</p>
+                    <h3>Tarta de <span class="color-info-tartas">Espinaca y queso</span></h3>
+                    <p>Espinaca, cebolla, mozzarella, huevo,
+                        morrón, queso crema, masa integral.</p>
                 </div>
-                <img class="tarta2" src="../assets/img/tartas/tartas2.png" alt="imagen tarta">
+                <img class="tarta2" src="../assets/img/tartas/verdura.png" alt="imagen tarta">
+            </div>
+            <div class="contenedor-tarta3">
+                <img class="tarta3" src="../assets/img/tartas/verdurashorneadas.png" alt="imagen tarta">
+                <div class="contenedor-info-tartas3">
+                    <h3>Tarta de <span class="color-info-tartas">vegetales horneados</span></h3>
+                    <p>Berenjena, cebolla, zapallito, morrón,
+                        verdeo, huevo, masa integral.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-catalogo">
+            <div class="contenedor-tarta2">
+                <div class="contenedor-info-tartas2">
+                    <h3>Tarta de <span class="color-info-tartas">zanahoria al tomillo
+                        con mozzarella
+                        </span></h3>
+                    <p>Zanahoria, cebolla, tomillo, queso
+                        crema, mozzarella, miel, tarta integral.</p>
+                </div>
+                <img class="tarta2" src="../assets/img/tartas/zanahoria.png" alt="imagen tarta">
+            </div>
+            <div class="contenedor-tarta1">
+                <img class="tarta1" src="../assets/img/tartas/zapallito.png" alt="imagen tarta">
+                <div class="contenedor-info-tartas">
+                    <h3>Tarta de <span class="color-info-tartas"> zapallitos al
+                        gratén
+                        </span></h3>
+                    <p>Zapallitos, cebolla, mozzarella , huevo,
+                        morrón, queso sardo, masa integral.</p>
+                </div>
+            </div>
+            <div class="contenedor-tarta2">
+                <div class="contenedor-info-tartas2">
+                    <h3>Tarta de <span class="color-info-tartas">jamon y queso</span></h3>
+                    <p class="parrafo-corto-tartas2">Jamón, mozzarella, huevo, masa integral.
+                    </p>
+                </div>
+                <img class="tarta2" src="../assets/img/tartas/jyq.png" alt="imagen tarta">
+            </div>
+        </div>
+        <div class="contenedor-catalogo">
+            <div class="contenedor-tarta1">
+                <img class="tarta1" src="../assets/img/tartas/zanahoriaysemillas.png" alt="imagen tarta">
+                <div class="contenedor-info-tartas">
+                    <h3>Tarta de <span class="color-info-tartas">calabaza y mix de
+                        semillas</span></h3>
+                    <p>Zapallo anco, cebolla, verdeo, huevo,
+                        mozzarella, queso crema, masa integral.</p>
+                </div>
+            </div>
+            <div class="contenedor-tarta2">
+                <div class="contenedor-info-tartas2">
+                    <h3>Tarta de <span class="color-info-tartas">pollo y queso crema</span></h3>
+                    <p class="parrafo-corto-tartas3">Pollo, cebolla, morrón, queso crema,
+                        verdeo. masa integral.</p>
+                </div>
+                <img class="tarta2" src="../assets/img/tartas/pollo.png" alt="imagen tarta">
+            </div>
+            <div class="contenedor-tarta3">
+                <img class="tarta3" src="../assets/img/tartas/Cebollaverdeo.png" alt="imagen tarta">
+                <div class="contenedor-info-tartas3">
+                    <h3>Tarta de <span class="color-info-tartas"> cebolla, queso y
+                        verdeo.</span></h3>
+                    <p class="parrafo-corto-tartas3">Cebolla, mozzarella, verdeo, huevo,
+                        queso crema, masa integral.
+                        </p>
+                </div>
             </div>
         </div>
     </main>
@@ -133,41 +201,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/headerpopup.js"></script>
     <script src="../js/responsive.js"></script>
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    
-        const sidenavLinks = document.querySelectorAll('.sidenav a'); // Seleccionamos todos los enlaces dentro del sidenav
-        const closeDelay = 300; // Retardo en milisegundos
-    
-        // Función para cerrar el sidenav con retardo
-        const closeSidenav = () => {
-            const sidenavInstance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
-            setTimeout(() => {
-                sidenavInstance.close();
-            }, closeDelay); // Se cierra después del retardo
-        };
-    
-        // Agregamos un evento de clic a cada enlace
-        sidenavLinks.forEach(link => {
-            link.addEventListener('click', closeSidenav);
-        });
-    
-        // Función para cerrar el sidenav al hacer clic fuera de él
-        const closeSidenavOnClickOutside = (event) => {
-            const sidenav = document.querySelector('.sidenav');
-            if (!sidenav.contains(event.target) && sidenav.classList.contains('open')) {
-                closeSidenav();
-            }
-        };
-    
-        // Agregar evento de clic al documento
-        document.addEventListener('click', closeSidenavOnClickOutside);
-    </script>
 
 </body>
 
