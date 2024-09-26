@@ -132,16 +132,14 @@ main {
     width: 100%;
     height: 1000px;
     margin: 0;
-    background-image: url(../assets/img/fondo-brocoli3.png);
-    background-size: cover;
+    background: #0d2033;
 }
 
 .main-productos-tartas {
     width: 100%;
     height: 3000px;
     margin: 0;
-    background-image: url(../assets/img/expositorphone.jpeg);
-    background-size: cover;
+    background: orange;
 }
 
 
@@ -149,8 +147,14 @@ main {
     width: 100%;
     height: 1000px;
     margin: 0;
-    background-image: url(../assets/img/fondo-espinaca1.png);
-    background-size: cover;
+    background: green;
+}
+
+.main-productos-muzzarelitas{
+    width: 100%;
+    height: 1000px;
+    margin: 0;
+    background: yellow;
 }
 
 
