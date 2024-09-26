@@ -38,7 +38,17 @@
 }
 
 .contenedor-info-tartas h3 {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--color-uno);
+    font-size: 3em;
+}
+
+.contenedor-info-tartas p {
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--color-uno);
+    font-size: 1em;
 }
 
 .contenedor-tarta2 {
@@ -69,7 +79,17 @@
 }
 
 .contenedor-info-tartas2 h3 {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--color-uno);
+    font-size: 3em;
+}
+
+.contenedor-info-tartas2 p {
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--color-uno);
+    font-size: 1em;
 }
 
 /* Aplicando la transformación al hacer hover */
