@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat.ttf') format('opentype');
+}
+
+.contenedor-tarta1 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.tarta1 {
+    width: 50%;
+    height: auto;
+    margin-left: -15%;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Suaviza la transición por defecto */
+}
+
+.contenedor-info-tartas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-info-tartas h3 {
+    font-family: 'Montserrat';
+}
+
+.contenedor-tarta2 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.tarta2 {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    right: -15%;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Suaviza la transición por defecto */
+}
+
+.contenedor-info-tartas2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 600px;
+}
+
+.contenedor-info-tartas2 h3 {
+    font-family: 'Montserrat';
+}
+
+/* Aplicando la transformación al hacer hover */
+.contenedor-tarta2 .tarta2:hover,
+.contenedor-tarta1 .tarta1:hover {
+    transform: scale(1.1); /* Escala 10% más grande */
+}
+
+/* Al quitar el hover, vuelve a su tamaño original suavemente */
+.tarta1,
+.tarta2 {
+    transform: scale(1); /* Asegúrate de que el tamaño original sea 1 */
+}
