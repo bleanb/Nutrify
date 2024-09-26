@@ -676,6 +676,19 @@ main {
     color: var(--color-dos);
 }
 
+.disable {
+    filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+    pointer-events: none; /* Desactiva la interacción con el enlace */
+    cursor: default; /* Cambia el cursor a la forma predeterminada */
+    margin-top: -110px;
+}
+
+.proximamente{
+    position: relative;
+    margin-top: -200px;
+}
+
+
 /****************************************************************************/
 /****************************************************************************/
 /****************************************************************************/
