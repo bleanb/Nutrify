@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Verificamos si la pantalla es menor o igual a 1024px de ancho
         if (window.matchMedia('(max-width: 1024px)').matches) {
             // Si es menor o igual, cambiamos la imagen a la versión móvil
-            image.src = './assets/img/panelphone1.png';
+            image.src = './assets/img/panelphone1.webp';
             image2.src = './assets/img/panelphone2.png';
             image3.src = './assets/img/panelphone3.png';
         } else {
             // Si es mayor, volvemos a la imagen original
-            image.src = './assets/img/panel1.png';
+            image.src = './assets/img/panel1.webp';
             image2.src = './assets/img/panel2.png';
             image3.src = './assets/img/panel3.png';
         }
