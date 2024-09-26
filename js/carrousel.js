@@ -21,17 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 id: 'img-panel1',
                 mobile: './assets/img/panelphone1.png',
-                desktop: './assets/img/panel1.png'
+                desktop: './assets/img/panel1.webp'
             },
             {
                 id: 'img-panel2',
                 mobile: './assets/img/panelphone2.png',
-                desktop: './assets/img/panel2.png'
+                desktop: './assets/img/panel2.webp'
             },
             {
                 id: 'img-panel3',
                 mobile: './assets/img/panelphone3.png',
-                desktop: './assets/img/panel3.png'
+                desktop: './assets/img/panel3.webp'
             }
         ];
 
