@@ -53,7 +53,94 @@
     }
 
 
-   
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+/*******************************TARTAS.HTML*********************************************/
+
+.main-productos-tartas {
+    height: 4500px;
+}
+
+.contenedor-catalogo{
+    width: 100%!important;
+    height: 1500px!important;
+    margin-top: -50px!important;
+}
+
+.contenedor-tarta1{
+    width: 50%!important;
+}
+
+.tarta1 {
+    width: 300%!important;
+    margin-left: -330px!important;
+}
+
+.rotate{
+    transform: rotate(50deg)!important; /* Corregido: transform y rotate(50deg) */
+}
+
+.contenedor-info-tartas{
+    width: 100%!important;
+    height: 400px;
+    margin-left: -50px;
+    margin-top: 0px!important;
+}
+
+.contenedor-info-tartas h3{
+    font-size: 2.4em!important;
+}
+
+
+.contenedor-tarta2{
+    width: 50%!important;
+    margin-top: 50px;
+}
+
+.tarta2 {
+    width: 300%!important;
+    margin-left: -90px!important;
+}
+
+.contenedor-info-tartas2{
+    width: 100%!important;
+    height: 400px;
+    margin-left: 170px!important;
+    margin-top: 0px!important;
+}
+
+.contenedor-info-tartas2 h3{
+    font-size: 2.4em!important;
+}
+
+
+.contenedor-tarta3{
+    width: 50%!important;
+    margin-top: 50px;
+}
+
+.tarta3 {
+    width: 300%!important;
+    margin-left: -320px!important;
+}
+
+.contenedor-info-tartas3{
+    width: 100%!important;
+    height: 400px;
+    margin-left: -60px!important;
+    margin-top: 0px!important;
+}
+
+.contenedor-info-tartas3 h3{
+    font-size: 2.4em!important;
+}
+
+.contenedor-boton-info-nutri{
+    flex-direction: column;
+    width: 100%!important;
+}
+
 /****************************************************************************/
 /****************************************************************************/
 /****************************************************************************/
