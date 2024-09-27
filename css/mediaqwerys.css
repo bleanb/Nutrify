@@ -3,7 +3,7 @@
     main {
         overflow: hidden;
         width: 100vw;
-        height: 5300px;
+        height: 5200px;
     }
 
     header{
@@ -100,7 +100,7 @@
 
 .tarta2 {
     width: 300%!important;
-    margin-left: -90px!important;
+    margin-left: -80px!important;
 }
 
 .contenedor-info-tartas2{
@@ -141,6 +141,17 @@
     width: 100%!important;
 }
 
+.contenedor-tarta3 .tarta3.rotate:hover,
+.contenedor-tarta2 .tarta2.rotate:hover,
+.contenedor-tarta1 .tarta1.rotate:hover{
+    transform: rotate(50deg)!important; /* Corregido: transform y rotate(50deg) */
+}
+
+.contenedor-tarta3 .tarta3:hover,
+.contenedor-tarta2 .tarta2:hover,
+.contenedor-tarta1 .tarta1:hover{
+    transform: scale(1)!important;
+}
 /****************************************************************************/
 /****************************************************************************/
 /****************************************************************************/
@@ -243,8 +254,36 @@
 }
 
 .ubicacion{
-
+    height: 800px;
 }
 
+.contenedor-ubicacion {
+    flex-direction: column;
+}
+
+.bloque-info{
+    margin-left: 80px;
+}
+.logo-blancoynegro{
+    margin-left: -70px;
+}
+.titulo-ubicacion{
+    margin-left: -80px;
+    margin-top: 80px!important;
+    margin-bottom: -20px;
+}
+
+.sinta{
+    margin-left: -65px;
+}
+
+.contenedor-right{
+    width: 100%!important;
+    margin-left: 50px!important;
+}
+
+.mapa{
+    width: 90%!important;
+}
 
 }
