@@ -35,7 +35,7 @@
 .contenedor-info-tartas {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     width: 500px;
     margin-top: -100px;
 }
@@ -55,27 +55,28 @@
 }
 
 .contenedor-tarta2 {
-    width: 100%;
+    width: 150%;
     height: 400px;
     display: flex;
     align-items: center;
+    margin-left: -150px;
 }
 
 .tarta2 {
-    width: 65%;
+    width: 45%;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease; /* Suaviza la transición por defecto */
-    margin-right: -200px;
-    
+    margin-left: -140px;  
 }
 
 .contenedor-info-tartas2 {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin-left: 100px;
+    align-items: left;
+    width: 700px;
+    margin-left: 200px;
 }
 
 .contenedor-info-tartas2 h3 {
@@ -124,9 +125,10 @@
 .contenedor-info-tartas3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     width: 500px;
     margin-top: 100px;
+    text-align: left;
 }
 
 .contenedor-info-tartas3 h3 {
@@ -149,17 +151,7 @@
     color: var(--color-dos);
 }
 
-.parrafo-corto-tartas{
-    margin-left: -55px;
-}
 
-.parrafo-corto-tartas2{
-    margin-left: -165px;
-}
-
-.parrafo-corto-tartas3{
-    margin-left: -30px;
-}
 
 .modal{
     width: 64%!important;
@@ -173,6 +165,7 @@
 
 .btn-info-nutri{
     margin-top: 15px;
+    border-radius: 50px!important;
 }
 
 .modal-content{
@@ -185,4 +178,19 @@
 
 .icon-close-modal{
     font-size: 3em!important;
+}
+
+.img-datos-tartas{
+    width: 30%;
+}
+
+.contenedor-boton-info-nutri{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 350px;
+}
+
+.contenedor-boton-info-nutri img{
+    margin-left: -19px;
 }
