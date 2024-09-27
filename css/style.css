@@ -677,181 +677,8 @@ main {
     justify-content: center;
 }
 
-/*
-.expositor-nosotros .banner-nosotros {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 20px;
-
-}
-
-.expositor-nosotros .banner-nosotros .separador {
-    width: 100%;
-    height: 500px;
-    margin-left: -20px;
-    margin-top: 180px;
-    position: absolute;
-}
 
 
-.expositor-nosotros .banner-nosotros h3 {
-    position: absolute;
-    font-family: 'BebasNeue-Regular';
-    font-size: 3em;
-    color: var(--color-uno);
-    z-index: 2;
-    margin-top: -100px;
-}
-
-.video-quienes-somos {
-    width: 80%;
-    height: 500px;
-}
-
-.video-quienes-somos video {
-    width: 100%;
-    height: 100%;
-    margin-top: -120px;
-}
-
-
-.expositor-nosotros .panel-info {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -150px;
-    position: absolute;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 {
-    width: 90%;
-    height: 300px;
-    background: var(--color-cinco);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 {
-    width: 90%;
-    height: 300px;
-    background: var(--color-cinco);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro1 {
-    width: 33.33%;
-    height: 100%;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro1 img {
-    width: 100%;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro2 {
-    width: 33.33%;
-    height: 100%;
-    padding: 25px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro2 {
-    font-family: 'Poppins';
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--color-uno);
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro3 {
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro3 .cuadrado-verde {
-    width: 90%;
-    height: 90%;
-    background: var(--color-uno);
-    padding: 55px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info1 .cuadro3 .cuadrado-verde p {
-    font-family: 'Poppins';
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--color-dos);
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro4 {
-    width: 30%;
-    height: 100%;
-    padding: 25px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro4 img {
-    margin-top: 100px;
-    margin-left: -55px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro4 p {
-    font-family: 'Poppins';
-    font-size: 0.8em;
-    font-weight: bold;
-    color: var(--color-uno);
-    margin-top: -20px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro5 {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro5 .cuadrado-naranja {
-    width: 100%;
-    height: 90%;
-    background: var(--color-dos);
-    padding: 55px;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro5 .cuadrado-naranja p {
-    font-family: 'Poppins';
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--color-uno);
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro6 {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro6 .contenedor-imagen {
-    width: 100%;
-    height: 100%;
-}
-
-.expositor-nosotros .panel-info .contenedor-info2 .cuadro6 .contenedor-imagen img {
-    width: 100%;
-    height: 100%;
-}
-*/
 /****************************************************************************/
 /****************************************************************************/
 /****************************************************************************/
@@ -869,6 +696,7 @@ main {
     justify-content: center;
 }
 
+
 .browser-default{
     outline: none;
     border: 2px solid var(--color-uno);
@@ -879,6 +707,7 @@ main {
     height: 10%;
     padding-left: 18px;
     margin-bottom: 8px; 
+    background: transparent!important;
 }
 
 select{

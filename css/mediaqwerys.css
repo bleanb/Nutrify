@@ -207,10 +207,44 @@
         margin-top: -50px;
     }
 
+    /****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
 
     .expositor-nosotros{
         height: 1000px;
         margin-top: 380px;
     }
+
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+.seccion-vender{
+    height: 800px;
+    flex-direction: column;
+}
+
+.contenedor-info-formulario{
+    width: 100%!important;
+    height: 40%!important;
+    margin-left: 0px!important;
+}
+
+.seccion-vender .contenedor-formulario{
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), whitesmoke), linear-gradient(to bottom, rgba(255, 255, 255, 0), whitesmoke), url(../assets/img/fondo-formulario.avif);
+    background-size: 280%;
+    background-repeat: no-repeat;
+}
+
+.ubicacion{
+
+}
+
 
 }
