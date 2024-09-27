@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'KanitBold';
-    src: url('../assets/font/KanitBold.ttf') format('opentype');
-}
 
 @font-face {
     font-family: 'BebasNeue-Regular';
     src: url('../assets/font/BebasNeue-Regular.ttf') format('opentype');
 }
 
-@font-face {
-    font-family: 'InterTight';
-    src: url('../assets/font/InterTight.ttf') format('opentype');
-}
 
 @font-face {
     font-family: 'Montserrat';
@@ -29,10 +21,6 @@
     src: url('../assets/font/KindergartenCam.ttf') format('opentype');
 }
 
-@font-face {
-    font-family: 'MontnaphaDemoBold';
-    src: url('../assets/font/MontnaphaDemoBold.otf') format('opentype');
-}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -449,7 +437,7 @@ main {
     font-size: 1.2em;
     border-radius: 15px;
     cursor: pointer;
-    font-family: 'InterTight';
+    font-family: 'Montserrat';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -594,7 +582,7 @@ main {
 }
 
 .contenedor-expositor-productos h3 {
-    font-family: 'KanitBold';
+    font-family: 'Montserrat';
     font-size: 2em;
     color: var(--color-dos);
     margin-top: -25px;    

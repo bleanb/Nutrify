@@ -183,7 +183,7 @@ function pintarMapa(direccion, barrio) {
 
     //markador custom para el mapa
     const customIcon = L.icon({
-        iconUrl: './assets/img/marker.png',
+        iconUrl: './assets/img/marker.webp',
         iconSize: [80, 80], // Tamaño del icono [ancho, alto
     });
 

@@ -277,6 +277,10 @@
     margin-left: -65px;
 }
 
+.label-checkbox{
+    margin-left: -100px;
+}
+
 .contenedor-right{
     width: 100%!important;
     margin-left: 50px!important;
