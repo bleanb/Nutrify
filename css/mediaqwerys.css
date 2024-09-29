@@ -3,7 +3,7 @@
     main {
         overflow: hidden;
         width: 100vw;
-        height: 5200px;
+        height: 5250px;
     }
 
     header{
@@ -224,21 +224,26 @@
 /****************************************************************************/
 
     .expositor-nosotros{
-        height: 1000px;
+        height: 1100px;
         margin-top: 380px;
-        background-size: 500%;
+        background-size: 530%;
         background-position: 73%;
     }
     .contenedor-info-nosotros{
         position: absolute;
-        left: 15%;
-        margin-top: 15%;
-        width: 70%;
+        left: 8%;
+        margin-top: 10%;
+        width: 75%;
 
     }
 
     .parrafo-nosotros{
-        font-size: 1.2em;
+        font-size: 1.28em;
+        margin-top: 15%;
+    }
+
+    .resaltador{
+        font-size: 1.08em;
     }
 
 

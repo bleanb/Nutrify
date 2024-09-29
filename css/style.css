@@ -688,6 +688,8 @@ main {
 
 .resaltador{
     color: var(--color-dos);
+    font-size: 1em;
+
 }
 
 
