@@ -663,8 +663,32 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(../assets/img/nosotros.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+.contenedor-info-nosotros{
+    width: 40%;
+}
+
+.titulo-nosotros{
+    font-family: 'Montserrat';
+    color: var(--color-uno);
+    width: 60%;
+    font-size: 2.7em;
+}
+
+.parrafo-nosotros{
+    width: 80%;
+    color: var(--color-uno);
+    font-family: 'Montserrat';
+    font-size: 1em;
+}
+
+.resaltador{
+    color: var(--color-dos);
+}
 
 
 /****************************************************************************/
