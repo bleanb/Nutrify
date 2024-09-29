@@ -226,7 +226,22 @@
     .expositor-nosotros{
         height: 1000px;
         margin-top: 380px;
+        background-size: 500%;
+        background-position: 73%;
     }
+    .contenedor-info-nosotros{
+        position: absolute;
+        left: 15%;
+        margin-top: 15%;
+        width: 70%;
+
+    }
+
+    .parrafo-nosotros{
+        font-size: 1.2em;
+    }
+
+
 
 /****************************************************************************/
 /****************************************************************************/
