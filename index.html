@@ -158,23 +158,23 @@
             <div class="expositor-productor">
                 <h3>Nuestros Productos</h3>
                 <div class="contenedor-productos1">
-                    <div class="producto animate__animated animate__fadeInUp">
+                    <div class="producto">
                         <a class="link-productos" href="./pages/tartas.html"><img src="./assets/img/Productos1.png"
                                 alt="Tartas"></a>
                         <p>Tartas</p>
                     </div>
-                    <div class="producto animate__animated animate__fadeInUp">
+                    <div class="producto">
                         <a class="link-productos" href="./pages/milanesas.html"><img src="./assets/img/Productos3.png"
                                 alt="Milanesas"></a>
                         <p>Milanesas</p>
                     </div>
-                    <div class="producto animate__animated animate__fadeInUp">
+                    <div class="producto">
                         <a class="link-productos disable" href="#"><img
                                 src="./assets/img/Productos2.jpeg" alt="Ensaladas"></a>
                         <p>Ensaladas</p>
                         <img class="proximamente" src="./assets/img/proximamente.png" alt="proximamente">
                     </div>
-                    <div class="producto animate__animated animate__fadeInUp">
+                    <div class="producto">
                         <a class="link-productos disable" href="./pages/milanesas.html"><img src="./assets/img/Productos3.png"
                                 alt="Milanesas"></a>
                         <p>Muzzarellitas</p>
@@ -186,9 +186,9 @@
 
 
         <div id="nosotros" class="expositor-nosotros">
-            <div class="contenedor-info-nosotros">
-                <h3 class="titulo-nosotros">Queres saber sobre nosotros?</h3>
-                <p class="parrafo-nosotros">
+            <div id="contenedor-info-nosotros" class="contenedor-info-nosotros">
+                <h3 id="titulianimado1" class="titulo-nosotros">Queres saber sobre nosotros?</h3>
+                <p id="parrafoanimado1" class="parrafo-nosotros">
                     Nutrify es una marca de productos alimenticios, creada para quienes buscan combinar <span class="resaltador">conveniencia y calidad</span> en su alimentación diaria. 
                     <br>Con ingredientes cuidadosamente seleccionados y un enfoque en el sabor auténtico, ofrecemos una experiencia culinaria rápida y saludable para un estilo de vida moderno.
                     <br>Tenemos como propósito ayudar a las personas a tomar el habito de la buena alimentación. Creemos que la alimentación es un pilar fundamental para el cuidado de la salud y el rendimiento diario.
@@ -199,7 +199,7 @@
 
         <div id="vender" class="seccion-vender">
 
-            <div class="contenedor-info-formulario">
+            <div id="contenedor-info-formulario" class="contenedor-info-formulario">
                 <h3 class="titulo-info-formulario">Sumate a la familia Nutrify</h3>
                 <p class="parrafo-info-formulario">Si tenes un local y estas interesado en vender nuestros productos, completa el siguiente formulario con tus datos y el equipo de nutrify se comunicará a la brevedad.</p>
             </div>
@@ -305,6 +305,54 @@
     <script src="./js/animacion-formulario.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/headerpopup.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productos = document.querySelectorAll('.producto');
+            const contenedor1 = document.getElementById('contenedor-info-formulario');
+            const contenedor2 = document.getElementById('titulianimado1');
+            const contenedor3 = document.getElementById('parrafoanimado1');
+
+            function checkVisibility() {
+                const windowHeight = window.innerHeight;
+    
+                // Verificar visibilidad de productos
+                productos.forEach(producto => {
+                    const rect = producto.getBoundingClientRect();
+                    const threshold = windowHeight * 0.8; // Puedes ajustar este valor
+    
+                    if (rect.top < threshold && rect.bottom > 0) {
+                        producto.classList.add('animate__animated', 'animate__fadeInUp');
+                        producto.style.opacity = 1; // Se hace visible
+                    }
+                });
+    
+                // Verificar visibilidad del contenedor1
+                const contenedor1Rect = contenedor1.getBoundingClientRect();
+                if (contenedor1Rect.top < windowHeight * 0.8 && contenedor1Rect.bottom > 0) {
+                    contenedor1.classList.add('animate__animated', 'animate__fadeInLeft');
+                    contenedor1.style.opacity = 1; // Se hace visible
+                }
+    
+                // Verificar visibilidad del contenedor2
+                const contenedor2Rect = contenedor2.getBoundingClientRect();
+                if (contenedor2Rect.top < windowHeight * 0.8 && contenedor2Rect.bottom > 0) {
+                    contenedor2.classList.add('animate__animated', 'animate__jackInTheBox');
+                    contenedor2.style.opacity = 1; // Se hace visible
+                }
+
+                // Verificar visibilidad del contenedor3
+                const contenedor3Rect = contenedor3.getBoundingClientRect();
+                if (contenedor3Rect.top < windowHeight * 0.8 && contenedor3Rect.bottom > 0) {
+                    contenedor3.classList.add('animate__animated', 'animate__fadeInUp');
+                    contenedor3.style.opacity = 1; // Se hace visible
+                }
+
+            }
+    
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Para verificar la visibilidad al cargar la página
+        });
+    </script>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------->
 </body>
