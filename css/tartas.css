@@ -14,6 +14,7 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: 100px;
 }
 
 .container-grid {
@@ -24,10 +25,10 @@
 }
 
 .container-tartas img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin-right: 1rem;
-    margin-left: -50px;
+    margin-left: -70px;
 }
 
 .container-content-tartas {
@@ -48,6 +49,7 @@
     font-size: 0.9rem;
     color: #666;
     display: none;
+    transition: 0.7s ease;
 }
 
 .container-tartas button {
@@ -59,40 +61,30 @@
     padding: 0;
     transition: transform 0.3s ease;
     margin-right: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container-tartas button.expanded {
     transform: rotate(180deg);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container-tartas.expanded p {
     display: block;
 }
-
-
-@media (max-width: 600px) {
-    #app {
-        padding: 0.5rem;
-    }
-
-    .container-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .container-tartas {
-        padding: 0.75rem;
-    }
-
-    .container-tartas img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .container-tartas h2 {
-        font-size: 1rem;
-    }
-
-    .container-tartas p {
-        font-size: 0.8rem;
-    }
+.container-tartas.expanded{
+    height: 200px;
 }
+
+.container-tartas.expanded img{
+    width: 280px;
+    height: 300px;
+    margin-left: -120px;
+}
+
