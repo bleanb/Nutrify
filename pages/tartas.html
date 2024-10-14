@@ -2,15 +2,14 @@
 <html>
 
 <head>
-    <title>nutrify</title>
+    <title>Nutrify</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" Content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/nutrify_iso_5.svg" type="image/png">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/img/nutrify_iso_5.svg" type="image/png">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/mediaqwerys.css">
     <link rel="stylesheet" type="text/css" href="../css/tartas.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaqwerys.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -20,8 +19,7 @@
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -87,146 +85,71 @@
     <!--                                            SECCION MAIN                                                             -->
     <!--------------------------------------------------------------------------------------------------------------------------->
     <main class="main-productos-tartas">
-        
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-            <div class="modal-footer">
-                <a href="../pages/tartas.html#!" class="right modal-close waves-effect btn-flat"><i class="icon-close-modal material-icons right">close</i></a>
-            </div>
-            <div class="modal-content">
-                <img src="../assets/img/Tablanutricional1.png" alt="Tablanutricional1">
-            </div>
-        </div>
-
-        <br><br><br><br><br><br><br>
-
-        <div class="contenedor-catalogo">
-            <div class="contenedor-tarta1">
-                <img class="tarta1 rotate" src="../assets/img/tartas/caprese.webp" alt="imagen tarta">
-                <div class="contenedor-info-tartas">
-                    <h3>Tarta de <span class="color-info-tartas">capresse</span></h3>
-                    <p class="parrafo-corto-tartas">Tomate, mozzarella, albahaca, masa
-                        integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-            </div>
-            <div class="contenedor-tarta2">
-                <div class="contenedor-info-tartas2">
-                    <h3>Tarta de <span class="color-info-tartas">Espinaca y queso</span></h3>
-                    <p>Espinaca, cebolla, mozzarella, huevo,
-                        morrón, queso crema, masa integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-                <img class="tarta2" src="../assets/img/tartas/verdura.webp" alt="imagen tarta">
-            </div>
-            <div class="contenedor-tarta3">
-                <img class="tarta3 rotate" src="../assets/img/tartas/verdurashorneadas.webp" alt="imagen tarta">
-                <div class="contenedor-info-tartas3">
-                    <h3>Tarta de <span class="color-info-tartas">vegetales horneados</span></h3>
-                    <p>Berenjena, cebolla, zapallito, morrón,
-                        verdeo, huevo, masa integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="contenedor-catalogo">
-            <div class="contenedor-tarta2">
-                <div class="contenedor-info-tartas2">
-                    <h3>Tarta de <span class="color-info-tartas">zanahoria al tomillo
-                            con mozzarella
-                        </span></h3>
-                    <p>Zanahoria, cebolla, tomillo, queso
-                        crema, mozzarella, miel, tarta integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-                <img class="tarta2" src="../assets/img/tartas/zanahoria.webp" alt="imagen tarta">
-            </div>
-            <div class="contenedor-tarta1">
-                <img class="tarta1 rotate" src="../assets/img/tartas/zapallito.webp" alt="imagen tarta">
-                <div class="contenedor-info-tartas">
-                    <h3>Tarta de <span class="color-info-tartas"> zapallitos al
-                            gratén
-                        </span></h3>
-                    <p>Zapallitos, cebolla, mozzarella , huevo,
-                        morrón, queso sardo, masa integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-            </div>
-            <div class="contenedor-tarta2">
-                <div class="contenedor-info-tartas2">
-                    <h3>Tarta de <span class="color-info-tartas">jamon y queso</span></h3>
-                    <p class="parrafo-corto-tartas2">Jamón, mozzarella, huevo, masa integral.
-                    </p>
-                    <div class="contenedor-boton-info-nutri">
-                        <img src="../assets/img/Sin título.webp" alt="deco">
-                        <!-- Modal Trigger -->
-                        <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
+        <div id="app">
+            <div class="container-grid">
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/caprese.webp" alt="Tarta Caprese">
+                    <div class="container-content-tartas">
+                        <h2>Tarta Caprese</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur consequuntur mollitia cumque rerum voluptatem molestiae, placeat possimus? Illo eos fugit deserunt commodi, sint veritatis quos dicta quisquam voluptate beatae.</p>
                     </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
                 </div>
-                <img class="tarta2 rotate" src="../assets/img/tartas/jyq.webp" alt="imagen tarta">
-            </div>
-        </div>
-        <div class="contenedor-catalogo">
-            <div class="contenedor-tarta1">
-                <img class="tarta1 rotate" src="../assets/img/tartas/zanahoriaysemillas.webp" alt="imagen tarta">
-                <div class="contenedor-info-tartas">
-                    <h3>Tarta de <span class="color-info-tartas">calabaza y mix de
-                            semillas</span></h3>
-                    <p>Zapallo anco, cebolla, verdeo, huevo,
-                        mozzarella, queso crema, masa integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-            </div>
-            <div class="contenedor-tarta2">
-                <div class="contenedor-info-tartas2">
-                    <h3>Tarta de <span class="color-info-tartas">pollo y queso crema</span></h3>
-                    <p class="parrafo-corto-tartas3">Pollo, cebolla, morrón, queso crema,
-                        verdeo. masa integral.</p>
-                        <div class="contenedor-boton-info-nutri">
-                            <img src="../assets/img/Sin título.webp" alt="deco">
-                            <!-- Modal Trigger -->
-                            <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
-                        </div>
-                </div>
-                <img class="tarta2" src="../assets/img/tartas/pollo.webp" alt="imagen tarta">
-            </div>
-            <div class="contenedor-tarta3">
-                <img class="tarta3" src="../assets/img/tartas/Cebollaverdeo.webp" alt="imagen tarta">
-                <div class="contenedor-info-tartas3">
-                    <h3>Tarta de <span class="color-info-tartas"> cebolla, queso y
-                            verdeo.</span></h3>
-                    <p class="parrafo-corto-tartas3">Cebolla, mozzarella, verdeo, huevo,
-                        queso crema, masa integral.
-                    </p>
-                    <div class="contenedor-boton-info-nutri">
-                        <img src="../assets/img/Sin título.webp" alt="deco">
-                        <!-- Modal Trigger -->
-                        <button data-target="modal1" class="btn-info-nutri btn waves-effect modal-trigger">Info Nutricional</button>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/pollo.webp" alt="Tarta Pollo">
+                    <div class="container-content-tartas">
+                        <h2>Tarta Pollo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sequi blanditiis cumque repudiandae eligendi quis rem velit voluptatem delectus quo exercitationem distinctio ducimus adipisci quia, reiciendis, in voluptates. Animi, quidem?</p>
                     </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/Cebollaverdeo.webp" alt="Tarta cebolla al verdeo">
+                    <div class="container-content-tartas">
+                        <h2>Tarta de cebolla al verdeo</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quis itaque autem quasi assumenda voluptatibus soluta repellat sit reiciendis facere dolores atque hic qui ratione, perspiciatis quos. Unde, ullam asperiores!</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/verdura.webp" alt="Tarta de verdura">
+                    <div class="container-content-tartas">
+                        <h2>Tarta de Verdura</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo libero quis aliquid neque, aperiam atque quae? Quia nulla rem, consequatur labore minus deleniti esse, minima natus voluptatem id rerum!</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/zanahoria.webp" alt="Tarta de zanahoria">
+                    <div class="container-content-tartas">
+                        <h2>Tarta de zanahoria</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni molestias modi error ipsa, neque eos aperiam quos perspiciatis soluta quam dolorum nam! Dolorem quasi tempore quae error laborum tempora.</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/zanahoriaysemillas.webp" alt="Tarta de zanahoria y semillas">
+                    <div class="container-content-tartas">
+                        <h2>Tarta de zanahoria y semillas</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae saepe obcaecati, neque architecto modi blanditiis repudiandae doloremque. Error dicta eligendi ea cumque aliquid cum ab iste fugiat dolores, tenetur obcaecati.</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/jyq.webp" alt="Tarta de Jamon y Queso">
+                    <div class="container-content-tartas">
+                        <h2>Tarta de Jamon y Queso</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odio natus dolor vero officiis nesciunt debitis doloribus fugit numquam a ea quod, tenetur dolorem maxime pariatur molestiae hic alias sapiente?</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
+                </div>
+                <div class="container-tartas">
+                    <img src="../assets/img/tartas/zapallito.webp" alt="tarta zapallito">
+                    <div class="container-content-tartas">
+                        <h2>Tarta Zapallito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae porro perspiciatis sequi nemo odio beatae. Iste error mollitia pariatur laborum voluptatum necessitatibus expedita eligendi, inventore earum at, consequuntur possimus.</p>
+                    </div>
+                    <button><i class="material-icons">arrow_drop_down_circle</i></button>
                 </div>
             </div>
         </div>
@@ -269,17 +192,18 @@
     <!------------------------------------------------------------------------------------------------------------------------------------------->
     <!--<script src="./js/"></script>-->
     <script src="../js/scroll.js"></script>
-    <script src="../js/carrousel.js"></script>
-    <script src="../js/menu-mapav11.js"></script>
-    <script src="../js/animacion-formulario.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/headerpopup.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
+        document.querySelectorAll('.container-tartas').forEach(container => {
+            const button = container.querySelector('button');
+            button.addEventListener('click', () => {
+                container.classList.toggle('expanded');
+                button.classList.toggle('expanded');
+            });
         });
     </script>
+
 </body>
 
 </html>
